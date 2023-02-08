@@ -6,3 +6,8 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Rubik Bubbles', cursive;
 text-align: justify;
 }
+#content div{
+    background: #68a8c2;
+    padding: 30px;
+}
+#content div:nth-child()
