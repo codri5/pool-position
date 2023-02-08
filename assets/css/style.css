@@ -10,4 +10,6 @@ text-align: justify;
     background: #68a8c2;
     padding: 30px;
 }
-#content div:nth-child()
+#content div:nth-child(even){
+    
+}
