@@ -11,8 +11,9 @@ body{
   }
 
   ul.navbar-nav {
-    margin-right: 50px;
-    color: blue !important;
+    margin-left: 80px;
+    justify-items: space-around;
+    color: grey;
     text-decoration:none;
   }
   
@@ -66,19 +67,55 @@ body{
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
-  
-  /* .search-form {
-    position: relative;
-    left: 70%;
-    top:60%;
-    /* position: absolute; */
-    /* z-index: 10; */ */
-    /* bottom: 20px;
-    right: 20px; */
-    /* width:300px;
-    height:500px; */
 
-  .map {
+  #aboutModal{
+    position: relative;
+    z-index: 9;
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+/* FOOTER */
+footer {
+  position: absolute;
+  width: 100%;
+  padding-top: 25px;
+  height: fit-content;
+  justify-content: center;
+}
+
+.footer .row{
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+.cardContainer col-sm-1 {
+  padding-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-contact {
+  width: 100%;
+}
+
+.card-contact :hover {
+  width:150px;
+}
+
+.row h4{
+  color:black;
+  justify-content: center;
+  padding-top: 25px;
+}
+.row h5{
+  color:black;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+  /* .map {
     height:400px;
     width: 100%;
-  }
+  } */
