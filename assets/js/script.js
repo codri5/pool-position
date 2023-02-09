@@ -17,3 +17,10 @@ function nextSlide() {
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add("active");
 }
+  function initMap() {
+    var wales = {lat: 52.1306, lng: -3.7837};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 7,
+      center: wales
+    });
+  }

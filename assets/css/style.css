@@ -56,10 +56,10 @@ body{
     display: block;
     margin: 40px, 40px, 40px, 40px;
 }
-  #slideshow img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+
+ .carouselImagesWales{
+    /* right: 0;
+    bottom: 0; */
     width: 20%;
     height: 100%;
     object-fit: cover;
@@ -67,10 +67,18 @@ body{
     transition: opacity 1s ease-in-out;
   }
   
-  .search-form {
-    position: absolute;
-    
-    bottom: 20px;
-    right: 20px;
-    
+  /* .search-form {
+    position: relative;
+    left: 70%;
+    top:60%;
+    /* position: absolute; */
+    /* z-index: 10; */ */
+    /* bottom: 20px;
+    right: 20px; */
+    /* width:300px;
+    height:500px; */
+
+  .map {
+    height:400px;
+    width: 100%;
   }
