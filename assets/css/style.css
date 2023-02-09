@@ -19,5 +19,10 @@ text-align: justify;
 #content div:nth-child(even){
 
 }
-
+.nested{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid: gap 20px;
+}
 }
