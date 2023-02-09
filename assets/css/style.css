@@ -1,1 +1,76 @@
+body{
+    max-width: fit-content;
+    font-family: Geneva, Verdana, sans-serif;
+    padding-left: 40px;
+  }
+  
+  /* NAVIGATION BAR */
 
+  .navbar-brand {
+    padding-left: 40px;
+  }
+
+  ul.navbar-nav {
+    margin-right: 50px;
+    color: blue !important;
+    text-decoration:none;
+  }
+  
+  ul.navbar-nav :hover{
+    font-size: larger;
+    color: black;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-toggler.active .icon-bar {
+    background-color: #000;
+  }
+  
+  .navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+  
+  .navbar-toggler.active .icon-bar:first-child {
+    transform: rotate(45deg);
+  }
+  
+  .navbar-toggler.active .icon-bar:last-child {
+    transform: rotate(-45deg);
+  }
+  
+/* Jumbotron with slideshow and floating searchform */
+
+.jumbotron{
+    display: block;
+    margin: 40px, 40px, 40px, 40px;
+}
+  #slideshow img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .search-form {
+    position: absolute;
+    
+    bottom: 20px;
+    right: 20px;
+    
+  }
