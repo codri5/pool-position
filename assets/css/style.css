@@ -1,9 +1,10 @@
 
 body{
-color: #fff;
+color: rgb(97, 11, 11);
 font-family: 'Bai Jamjuree', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Rubik Bubbles', cursive;
+
 text-align: justify;
 }
 #content{
