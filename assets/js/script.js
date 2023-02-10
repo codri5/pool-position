@@ -1,12 +1,53 @@
-// Included because my hamburger menu doesn't open, but as this is supposed to be a default in Bootstrap, maybe this is redundant?
+let map;
 
-$(document).ready(function(){
-    $(".navbar-toggler").click(function(){
-      $(".navbar-toggler").toggleClass("active");
-    });
-  });  
+// added and centered map
+function initMap() {
+  const wales = new google.maps.LatLng(52.1580, -3.9076);
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: wales,
+    zoom: 7,
+  });
+  // added markers
+  setTimeout(function () {
+    for (let i = 0; i < spots.length; i++) {
+      new google.maps.Marker({
+        position: coord[i],
+        map
+      });
+    }
+  }, 100) 
+}
 
-//   Slideshow to randomly display on fade-out-fade-in
+// spots array
+const spots = ['Dorothea Quarry', 'Llyn Tegid', 'Blue Lake Wales', 'Pont Melin-Fach', 
+              'Henrhyd Falls', 'Pistyll Rhaeadr', 'Horseshoe Falls Wales', 'Bae y Tri Chlogwyn', 
+              'Rhossili Bay', 'Llynnau Mymbyr', 'Llyn Dinas', 'River Towy', 'Llyn y Fan Fach'];
+
+// declare coord and id arrays
+const coord = [];
+const spotsID = []; 
+// loop through spots array
+for (let i = 0; i < spots.length; i++) {
+  // call geocoding API and extract coordinates and place ids for each item
+  fetch(`https://maps.googleapis.com/maps/api/geocode/json?address=${spots[i]}&key=AIzaSyB4_LlKcmjksW1RPD-Zm2y-t0JR7KMMtV4`)
+  .then((response) => {
+    return response.json();
+  }).then(jsonData => {
+    // stored coordinates and place ids in arrays
+      coord.push(jsonData.results[0].geometry.location);
+      spotsID.push(jsonData.results[0].place_id)
+  })
+  .catch(error => {
+    console.log(error);
+  })
+}
+// await call to complete before logging arrays
+setTimeout(function () {
+  console.log(coord);
+  console.log(spotsID);
+}, 100)
+/*
+// Slideshow to randomly display on fade-out-fade-in
 let slideshow = document.querySelector("#slideshow");
 let slides = slideshow.querySelectorAll("img");
 let currentSlide = 0;
@@ -16,40 +57,3 @@ function nextSlide() {
   slides[currentSlide].classList.remove("active");
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add("active");
-}
-
-// To close or dismiss the modal that appears when user clicks on "About" in navbar
-$(document).ready(function() {
-  $('#aboutModal').on('shown.bs.modal', function () {
-    $('#aboutModal').trigger('focus')
-  });
-  $("button.close").click(function() {
-    $("#aboutModal").modal("hide");
-  });
-});
-
-let map;
-let marker;
-
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 37.7749, lng: -122.4194},
-    zoom: 8
-  });
-  
-  marker = new google.maps.Marker({
-    position: {lat: 37.7749, lng: -122.4194},
-    map: map
-  });
-}
-
-let mapLocation1 = new google.maps.Map(document.getElementById('map-location-1'), {
-  zoom: 8,
-  center: {lat: 37.7749, lng: -122.4194}
-});
-
-let mapLocation2 = new google.maps.Map(document.getElementById('map-location-2'), {
-  zoom: 8,
-  center: {lat: 47.6062, lng: -122.3321}
-});
-
