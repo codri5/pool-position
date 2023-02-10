@@ -27,3 +27,29 @@ $(document).ready(function() {
     $("#aboutModal").modal("hide");
   });
 });
+
+let map;
+let marker;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 37.7749, lng: -122.4194},
+    zoom: 8
+  });
+  
+  marker = new google.maps.Marker({
+    position: {lat: 37.7749, lng: -122.4194},
+    map: map
+  });
+}
+
+let mapLocation1 = new google.maps.Map(document.getElementById('map-location-1'), {
+  zoom: 8,
+  center: {lat: 37.7749, lng: -122.4194}
+});
+
+let mapLocation2 = new google.maps.Map(document.getElementById('map-location-2'), {
+  zoom: 8,
+  center: {lat: 47.6062, lng: -122.3321}
+});
+

@@ -15,7 +15,7 @@
   <body>
     
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="file:/Users/andrea/Desktop/Pool-Position/pool-position/index.html">
+        <a class="navbar-brand" class="active" href="index.html">
             <img src="./assets/Images/images/Logo3.jpg" width="200" height="200" class="d-inline-block align-top" alt="wave icons atop text">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,14 +27,14 @@
               <a class="nav-link" href="#aboutModal" data-toggle="modal">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Users/andrea/Desktop/Pool-Position/pool-position/index.html/map">Map</a>
+              <a class="nav-link" href="map.html">Map</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Users/andrea/Desktop/Pool-Position/pool-position/index.html/links">Links</a>
+              <a class="nav-link" href="links.html">Links</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Users/andrea/Desktop/Pool-Position/pool-position/index.html/about">Contact</a>
-            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li> -->
           </ul>
         </div>
       </nav>
@@ -89,17 +89,6 @@
       </div>
     </div>
 
-    <!-- Map page (linked to navbar "Map") -->
-    <section class="Map">
-      <div class="container-fluid">
-        <div id="mapWales" class="banner" data-ride="mapWales"></div>
-        <iframe src="https://www.google.com/maps/d/embed?mid=1DcwfQw_cF07IDw-dNVHsH0z8Aew&ehbc=2E312F" width="fit-content" height="fit-content"></iframe>
-        <div id="mapWales" class="carousel slide" data-ride="carousel">
-          <div class="map-banner">
-            <div class="map-banner active">
-            </div>
-          </div>
-    </section>
 
     <!-- Footer with liunks and credits -->
     <footer class="footer">
@@ -145,6 +134,10 @@
 <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4_LlKcmjksW1RPD-Zm2y-t0JR7KMMtV4&libraries=places&callback=initMap">
+</script>
+
 <!-- Popper JS -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
@@ -154,6 +147,6 @@
   <script src="./assets/script.js"></script>
 
 
-      </body>
+  </body>
 </html>
 

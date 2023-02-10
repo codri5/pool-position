@@ -115,6 +115,11 @@
     margin-top: 250px;
   } 
 
+  .map-location {
+    height: 500px;
+    width: 100%;
+  }
+
 /* FOOTER */
 .footer .container-fluid{
   position: absolute;
