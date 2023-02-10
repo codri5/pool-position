@@ -17,3 +17,13 @@ function nextSlide() {
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add("active");
 }
+
+// To close or dismiss the modal that appears when user clicks on "About" in navbar
+$(document).ready(function() {
+  $('#aboutModal').on('shown.bs.modal', function () {
+    $('#aboutModal').trigger('focus')
+  });
+  $("button.close").click(function() {
+    $("#aboutModal").modal("hide");
+  });
+});
