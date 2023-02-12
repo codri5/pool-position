@@ -163,4 +163,42 @@
   padding-top: 25px;
   padding-bottom: 25px;
 }
- 
+
+#map {
+  margin: 20px;
+}
+
+#windowImg {
+  border-radius: 5px;
+  align-content: center;
+}
+
+#windowNames {
+  font-size: 16px;
+}
+
+#windowArea {
+  font-size: 14px;
+  font-style: italic;
+}
+
+#windowNames, #windowRtg, #windowArea, #dir {
+  text-align: center;
+  margin: 2px;
+}
+
+#windowNames {
+  padding-top: 5px;
+}
+
+#dir {
+  margin-top: 5px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#windowRtg, #dir {
+  font-weight: bold;
+}

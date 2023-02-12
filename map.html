@@ -7,8 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geneva">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Pool Position</title>
   </head>
 
@@ -23,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#aboutModal" data-toggle="modal">About</a>
+              <a class="nav-link" href="index.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" class="active" href="map.html">Map</a>
@@ -36,15 +35,10 @@
       </nav>
 
 <!--Main layout-->
-<main class=" m-0 p-0">
-    <div class="container-fluid m-0 p-0">
-  
+<main class="main m-0 p-0">
+    <div class="container-fluid">
       <!--Google map-->
-      <div id="map-container-google-4" class="z-depth-1-half map-container-4" style="height: 800px">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1DcwfQw_cF07IDw-dNVHsH0z8Aew&ehbc=2E312F" width="100%" height="100%"></iframe>
-      </div>
-     
-      
+      <div id="map" class="z-depth-1-half map-container-4" style="height: 500px"></div>
     </div>
   </main>
      
@@ -92,7 +86,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4_LlKcmjksW1RPD-Zm2y-t0JR7KMMtV4&libraries=places&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4_LlKcmjksW1RPD-Zm2y-t0JR7KMMtV4&callback=initMap">
 </script>
 
 <!-- Popper JS -->
@@ -101,8 +95,8 @@
 <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-  <script src="./assets/script.js"></script>
-
+  <script src="assets/js/locations.js"></script>
+  <script src="assets/js/script.js"></script>
 
   </body>
 </html>
