@@ -4,72 +4,56 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Bootstrap CSS -->
-    
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Pool Position</title>
   </head>
 
   <body>
-    
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" class="active" href="index.html">
-            <img src="./assets/Images/images/Logo3.jpg" width="200" height="200" class="d-inline-block align-top" alt="wave icons atop text">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#aboutModal" data-toggle="modal">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="map.html">Map</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="links.html">Links</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li> -->
-          </ul>
-        </div>
-      </nav>
-    
-     <!-- Home page with carousel slide show, serach form and information modal -->
+    <!-- <div class="hero-container d-flex h-80 p-3 mx-auto flex-column"> -->
       <div class="container-fluid">
-        <div id="carouselImagesWales" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="./assets/Images/images/richard-griffiths-aVHrZPyKxDE-unsplash copy.jpg" alt="First slide">
+        <header>
+            <div class="inner d-flex justify-content-center align-items-center">
+            <!-- <h3 class="masthead-brand">Pool Position</h3> -->
+                <img id="logo" src="assets/images/pool-position-logo.jpg">
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">About</a>
+                <a class="nav-link" href="#map-section">Map</a>
+                <a class="nav-link" href="#locations-section">Location</a>
+                </nav>
+                </div>
+            </header>
+
+        <main>
+          <section class="hero-container">
+            <div class="search-container">
+              <h4 class="hero-heading">Pool Position</h4>
+              <h1 class="hero-heading">Go wild swimming in Wales.</h1>
+              <div class="input-group">
+                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <button id="hero-search"type="button" class="btn btn-outline-primary">Discover</button>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/Images/images/vincent-guth-2CNQmnM7idI-unsplash-copy.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/Images/images/ambitious-creative-co-rick-barrett-x5hFSPUT8uU-unsplash-copy.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/Images/images/daniel-sessler-0HQIpY3YcJA-unsplash-copy.jpg" alt="Fourth slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/Images/images/neil-mark-thomas-xF1k103BlBc-unsplash-copy.jpg" alt="Fifth slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="./assets/Images/images/neil-mark-thomas-dGyshquBzOc-unsplash-copy.jpg" alt="Sixth slide">
-            </div>
-       
-            <form class="search-form">
-              <input id="searchInput" type="text" name="location" placeholder="Enter a location">
-              <button type="submit">Search</button>
-            </form>
-        </div>
-      </div>
+          </section> <!-- end of hero -->
+
+          <a id ="map-section"></a>
+            <section class="map-section">
+              <div id="map"></div>
+            </section>  <!-- end of map -->
+
+          <a id ="locations-section"></a>
+            <section id="locations">
+              <div id="location-cards" class="row d-flex justify-content-around"></div>
+            </section>  <!-- end of locations -->
+     
 <!-- Text box that floats over slideshow and introduces app when user clicks "About" in navbar -->
     <div class="modal" tabindex="-1" id="aboutModal">
       <div class="modal-dialog">
@@ -91,32 +75,30 @@
       </div>
     </div>
 
-    <!-- Footer with liunks and credits -->
+<!-- Footer with credits -->
     <footer class="footer">
-      <div class="container-fluid">
         <div class="row">
-         
           <div class="cardContainer col-sm-1">
             <div class="card-contact">
-              <img src="./assets/Images/images/British_Swimming.jpg" class="card-img-top" alt="British Swimming logo">
+              <img src="./assets/images/British_Swimming.jpg" class="card-img-top" alt="British Swimming logo">
                 <a href="https://www.britishswimming.org/"></a>
             </div>  
           </div>
           <div class="cardContainer col-sm-1">
             <div class="card-contact">    
-              <img src="./assets/Images/images/Image-09-02-2023-at-16.51.jpg" class="card-img-top" alt="Swim England Logo">
+              <img src="./assets/images/Image-09-02-2023-at-16.51.jpg" class="card-img-top" alt="Swim England Logo">
               <a href="https://www.swimming.org/swimengland/"></a>
             </div>
           </div>      
           <div class="cardContainer col-sm-1">
             <div class="card-contact"> 
-              <img src="./assets/Images/images/Image-09-02-2023-at-16.52.jpg"class="card-img-top" alt="OSS Logo">
+              <img src="./assets/images/Image-09-02-2023-at-16.52.jpg"class="card-img-top" alt="OSS Logo">
                 <a href="https://www.outdoorswimmingsociety.com/"></a>
             </div>
           </div>
           <div class="cardContainer col-sm-1">
             <div class="card-contact"> 
-              <img src="./assets/Images/images/Image-09-02-2023-at-16.54.jpg" class="card-img-top" alt="Swim Wales Logo">            
+              <img src="./assets/images/Image-09-02-2023-at-16.54.jpg" class="card-img-top" alt="Swim Wales Logo">            
                 <a href="https://www.swimwales.org/"></a>
               </div>
             </div>
@@ -124,22 +106,20 @@
         <div class="row">
           <div class="credits">
             <h5>© Empirici 2023, All Rights Reserved</h5>
-            <h6>Photography: Neil Mark Thomas, Richard Griffiths, Vincent Guth, Daniel Sessler, and Ambitious Creative, all courtesy of <a href="https://unsplash.com/s/photos/wales">Unsplash.com</h6></a>
-            
+            <h6>Photography: Neil Mark Thomas, Richard Griffiths, Vincent Guth, Daniel Sessler, and Ambitious Creative, all courtesy of <a id="unsplash" href="https://unsplash.com/s/photos/wales">Unsplash.com</h6></a>
           </div>
-      </div>
-      </div>
+        </div>
     </footer>
    
-
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <script async
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/333a269518.js" crossorigin="anonymous"></script>
+  <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4_LlKcmjksW1RPD-Zm2y-t0JR7KMMtV4&callback=initMap">
-    </script>
-    <script src="assets/js/script.js"></script>
+  </script>
+  <script src="assets/js/locations.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="assets/js/list.js"></script>
+
 </body>
 </html>

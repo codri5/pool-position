@@ -5,7 +5,7 @@ function initMap() {
   const wales = new google.maps.LatLng(52.1580, -3.9076);
   map = new google.maps.Map(document.getElementById('map'), {
     center: wales,
-    zoom: 7,
+    zoom: 7.3,
   });
   // create markers and info windows
   for (let i = 0; i < locations.length; i++) {
@@ -17,11 +17,11 @@ function initMap() {
     // change marker color
     marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png')
     // info windows content
-    const windowContent = `<img id="windowImg" src="${mainImg[i]}" height="100" width="150"/>
+    const windowContent = `<img id="windowImg" src="${mainImg[i]}" http://maps.google.com/mapfiles/ms/icons/green-dot.png/>
                            <h6 id="windowNames">${names[i]}</h1>
                            <p id="windowArea">${area[i]}</p>
                            <p id="windowRtg">★ ${rating[i]}</p>
-                           <p id="dir"><a href="${directions[i]}" target=_blank>Get Directions</a></p>`;
+                           <p id="dir"><a class="dir href="${directions[i]}" target=_blank>Get Directions</a></p>`;
     const info = new google.maps.InfoWindow({
       content: windowContent,
     });

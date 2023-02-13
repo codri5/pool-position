@@ -1,176 +1,179 @@
-.body{
-    max-width: fit-content;
-    font-family: Geneva, Verdana, sans-serif;
-    /* padding-left: 40px; */
-    /* background-color:aliceblue; */
-  }
-  
-  .container-fluid{
-    background-color:aliceblue;
-  }
+/*
+ * Globals
+ */
 
-  /* NAVIGATION BAR */
-  .navbar{
-    background-color:aliceblue !important;
-  }
-
-  ul.navbar-nav :hover{
-    font-size: larger;
-    color: black;
-  }
-  .navbar-nav > li {
-    padding-left: 20px;
-    padding-right: 40px;
-  }
-  
-  .navbar-toggler {
-    border: 2px, black;
-    background-color: transparent;
-  }
-  
-  .navbar-toggler.active .icon-bar {
-    background-color: #000;
-  }
-  
-  .navbar-toggler .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .navbar-toggler .icon-bar + .icon-bar {
-    margin-top: 4px;
-  }
-  
-  .navbar-toggler.active .icon-bar:first-child {
-    transform: rotate(45deg);
-  }
-  
-  .navbar-toggler.active .icon-bar:last-child {
-    transform: rotate(-45deg);
-  }
-  
-/* Jumbotron with slideshow and floating searchform */
-
-.jumbotron{
-    display: block;
-    margin: 40px, 40px, 40px, 40px;
-}
-/* .carouselImagesWales{
-  right: 0;
-  bottom: 0;
-  /* width: 20%;
-  height: 100%; */
-  /* object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-} */ */
-.carousel-item {
-  display: none;
-  position: absolute;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.6s ease-in-out;
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
 }
 
-.active {
-  display: block !important;
-  opacity: 1;
-  transition: opacity 0.6s ease-in-out;
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
 }
 
-/* .carousel-item {
-  position: absolute;
-  -webkit-transition: opacity 0.6s ease-in-out;
-  -moz-transition: opacity 0.6s ease-in-out;
-  -ms-transition: opacity 0.6s ease-in-out;
-  -o-transition: opacity 0.6s ease-in-out;
-  transition: opacity 0.6s ease-in-out;
+/*
+ * Base structure
+ */
+
+ html,
+ body {
+   height: 100%;
+   background-color:#16241f;
+   z-index: -10;
+   scroll-behavior: smooth;
+ }
+ 
+ body {
+   display: -ms-flexbox;
+   display: -webkit-box;
+   display: flex;
+   -ms-flex-pack: center;
+   -webkit-box-pack: center;
+   justify-content: center;
+   width: 100%;
+   color: #fff;
+   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+ }
+
+/* --------------  Nav Styling --------------  */
+
+#logo {
+  padding: 5px;
+  width: 80px;
+  margin-right: 40px;
 }
 
-.active {
-  display: block;
-  opacity: 1;
-  -webkit-transition: opacity 0.6s ease-in-out;
-  -moz-transition: opacity 0.6s ease-in-out;
-  -ms-transition: opacity 0.6s ease-in-out;
-  -o-transition: opacity 0.6s ease-in-out;
-  transition: opacity 0.6s ease-in-out;
-} */
-.search-form {
-  position: absolute;
-  bottom: 160px;
-  right: 160px;
-  z-index: 1;
+.nav-masthead .nav-link {
+  padding: 1rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
 }
 
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  text-decoration: underline wavy;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 0.1rem;
+}
 
-  #aboutModal{
-    position: fixed;
-    z-index: 10;
-    float: right;
-    margin-right: 250px;
-    margin-top: 250px;
-  } 
+.nav-masthead .active {
+  color: #fff;
+  text-decoration: #FF6600 underline wavy;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 0.1rem;
+}
 
-  .map-location {
-    height: 500px;
-    width: 100%;
-  }
+/* --------------  Hero Image & Container Styling --------------  */
 
-/* FOOTER */
-.footer .container-fluid{
-  position: absolute;
+.container-fluid {
   width: 100%;
-  padding-top: 50px;
-  height: fit-content;
-  background-color: white !important;
+  padding: 0;
+  margin: 0;
 }
 
- .footer .row{
-  align-content: center;
-  justify-content: space-around;
-  margin-bottom: 25px;
-} 
-
-.cardContainer col-sm-1 {
-  padding-bottom: 25px;
-  align-items: center;
-  justify-content: center;
+.hero-container {
+  display:flex;
+  width: 100vw;
+  height:70vh;
+  justify-content:center;
+  align-items:center;
+  overflow: hidden;
+  background-image: url("../images/waterfall.copy.jpg");
+  background-size: cover, contain;
 }
 
-.card-contact {
+.search-container {
+  display:flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.hero-heading {
+  padding: .5rem 0;
+  margin: 0;
+}
+
+#hero-search{
+  font-weight: 500;
+  color: #FF6600;
+  border-color: #FF6600;
+  padding: 0 50px;
+  margin-left: 10px;
+}
+#hero-search:hover{
+  background-color: #FF6600;
+  color: #333;
+}
+
+/* --------------  Location Cards --------------  */
+
+#locations {
+  background-color: #fff;
+}
+
+.card {
+  width: 18rem;
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 5px 10px 20px darkgray;
+  color: #333;
+}
+
+.card-body{
+  padding: 10px 20px;
+  padding-bottom: 30px;
+}
+
+.image-container {
   width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
 }
 
-.card-contact :hover {
-  width:150px;
+img {
+  background-image: url();
+  border-radius: 10px;
+  height: inherit;
+  width: inherit;
+}
+.card-title {
+  font-size: large;
+
+  line-height: 1rem;
 }
 
-.row .credits h5{
-  justify-content:flex-start;
-  margin-left: 0;
-  font-size: 16px;
-  color:black;
-  padding-top: 25px;
+p {
+  font-size: small;
 }
-.row .credits h6{
-  margin-left: 0;
-  justify-content:flex-start;
-  color:black;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
+
+/* -------------- Map Style --------------  */
 
 #map {
-  margin: 20px;
+  height: 75vh;
+  margin: 15vh;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  color: black;
 }
 
 #windowImg {
   border-radius: 5px;
   align-content: center;
+  height: 100px;
+  width: 150px;
 }
 
 #windowNames {
@@ -201,4 +204,64 @@ a:hover {
 
 #windowRtg, #dir {
   font-weight: bold;
+}
+
+/* -------------- Modal Style --------------  */
+#aboutModal{
+  position: fixed;
+  z-index: 10;
+  float: right;
+  margin-right: 250px;
+  margin-top: 250px;
+} 
+
+/* -------------- Footer Style --------------  */
+
+footer {
+  margin-top: 30px;
+  background-color: white;
+}
+
+.footer .row{
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 25px;
+} 
+
+.cardContainer col-sm-1 {
+  padding-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-contact {
+  width: 100%;
+}
+
+.credits {
+  color: black;
+}
+
+.row .credits h5{
+  justify-content:flex-start;
+  margin-left: 0;
+  font-size: 16px;
+  padding-top: 30px;
+  font-size: 12px;
+}
+.row .credits h6{
+  margin-left: 0;
+  justify-content:flex-start;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
+}
+
+.card-img-top {
+  padding-top: 30px;
+}
+
+#unsplash {
+  color: grey;
+  font-style: italic;
 }
