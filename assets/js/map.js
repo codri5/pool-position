@@ -1,12 +1,29 @@
-let map;
+let map, autocomplete;
 let infWindow = false;
 // added and centered map
 function initMap() {
   const wales = new google.maps.LatLng(52.1580, -3.9076);
   map = new google.maps.Map(document.getElementById('map'), {
     center: wales,
-    zoom: 7.3,
+    zoom: 7.3
   });
+  // added autocomplete feature
+  autocomplete = new google.maps.places.Autocomplete (
+    document.getElementById('search_input'),
+    {
+      types: ['natural_feature'],
+      componentRestrictions: {country: 'UK'},
+      fields: ['geometry', 'name']
+    })
+  // autocomplete event listener
+  autocomplete.addListener('place_changed', function() {
+    let place = autocomplete.getPlace();
+      if (place.geometry) {
+         map.panTo(place.geometry.location);
+         map.setZoom(13);
+      } 
+    });
+  
   // create markers and info windows
   for (let i = 0; i < locations.length; i++) {
     const marker = new google.maps.Marker({
@@ -35,6 +52,7 @@ function initMap() {
     });
   }
 }
+
 // create arrays from main object
 const latlng = [];
 locations.forEach(item => latlng.push(item.latlng));

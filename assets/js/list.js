@@ -1,5 +1,6 @@
 const locationsDiv = document.querySelector("#location-cards")
-const searchBu = document.querySelector("#hero-search")
+const discoverBtn = document.querySelector("#hero-search")
+const locationLink = document.querySelector("#location-link")
 // const firsticon = document.querySelector("#firsticon")
 
 const likeIcon =  "fa-solid fa-heart";
@@ -117,5 +118,5 @@ let likeButton = function(event) {
 locations = updateLocations(locations)
 
 // addEventListener("load", )
-searchBu.addEventListener("click", renderLocations)
+locationLink.addEventListener("click", renderLocations)
 locationsDiv.addEventListener("click", likeButton)
