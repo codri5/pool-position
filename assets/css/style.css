@@ -116,6 +116,76 @@ a:hover {
   color: #333;
 }
 
+/* -------------- Map Style --------------  */
+
+#map {
+  height: 75vh;
+  margin: 15vh;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  color: black;
+}
+
+#windowImg {
+  border-radius: 5px;
+  align-content: center;
+  height: 100px;
+  width: 150px;
+}
+
+#windowNames {
+  font-size: 16px;
+  text-align: center !important;
+}
+
+#windowArea {
+  font-size: 14px;
+  font-style: italic;
+}
+
+#windowNames, #windowRtg, #windowArea, #dir {
+  text-align: center;
+  margin: 2px;
+}
+
+#windowNames {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+#dir {
+  margin-top: 5px;
+}
+
+#direct {
+  color: black;
+}
+
+#direct:hover{
+  color: grey;
+}
+
+.dir {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#windowRtg, #dir {
+  font-weight: bold;
+}
+
+/* -------------- Modal Style --------------  */
+#aboutModal{
+  position: fixed;
+  z-index: 10;
+  float: right;
+  margin-right: 250px;
+  margin-top: 250px;
+} 
+
 /* --------------  Location Cards --------------  */
 
 #locations {
@@ -158,62 +228,6 @@ img {
 p {
   font-size: small;
 }
-
-/* -------------- Map Style --------------  */
-
-#map {
-  height: 75vh;
-  margin: 15vh;
-  margin-top: 20vh;
-  margin-bottom: 50px;
-  color: black;
-}
-
-#windowImg {
-  border-radius: 5px;
-  align-content: center;
-  height: 100px;
-  width: 150px;
-}
-
-#windowNames {
-  font-size: 16px;
-}
-
-#windowArea {
-  font-size: 14px;
-  font-style: italic;
-}
-
-#windowNames, #windowRtg, #windowArea, #dir {
-  text-align: center;
-  margin: 2px;
-}
-
-#windowNames {
-  padding-top: 5px;
-}
-
-#dir {
-  margin-top: 5px;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-#windowRtg, #dir {
-  font-weight: bold;
-}
-
-/* -------------- Modal Style --------------  */
-#aboutModal{
-  position: fixed;
-  z-index: 10;
-  float: right;
-  margin-right: 250px;
-  margin-top: 250px;
-} 
 
 /* -------------- Footer Style --------------  */
 

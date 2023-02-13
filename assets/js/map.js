@@ -17,11 +17,11 @@ function initMap() {
     // change marker color
     marker.setIcon('http://maps.google.com/mapfiles/ms/icons/blue-dot.png')
     // info windows content
-    const windowContent = `<img id="windowImg" src="${mainImg[i]}" http://maps.google.com/mapfiles/ms/icons/green-dot.png/>
+    const windowContent = `<img id="windowImg" src="${mainImg[i]}" />
                            <h6 id="windowNames">${names[i]}</h1>
                            <p id="windowArea">${area[i]}</p>
                            <p id="windowRtg">★ ${rating[i]}</p>
-                           <p id="dir"><a class="dir href="${directions[i]}" target=_blank>Get Directions</a></p>`;
+                           <p id="dir"><a href="${directions[i]}" target=_blank><span id="direct">Get Directions</span></a></p>`;
     const info = new google.maps.InfoWindow({
       content: windowContent,
     });
@@ -48,3 +48,4 @@ const rating = [];
 locations.forEach(item => rating.push(item.rating));
 const directions = [];
 locations.forEach(item => directions.push(item.directions));
+console.log(directions)
