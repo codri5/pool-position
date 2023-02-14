@@ -120,7 +120,5 @@ let likeButton = function(event) {
 
 locations = updateLocations(locations)
 
-// addEventListener("load", )
-// searchBar.addEventListener("keydown", showmap)
 locationLink.addEventListener("click", renderLocations)
 locationsDiv.addEventListener("click", likeButton)

@@ -1,4 +1,3 @@
-let mapSection = document.getElementById("map-section")
 let map, autocomplete;
 let infWindow = false;
 // added and centered map
@@ -22,7 +21,6 @@ function initMap() {
       if (place.geometry) {
          map.panTo(place.geometry.location);
          map.setZoom(13);
-         mapSection.scrollIntoView()
       } 
 
     });
