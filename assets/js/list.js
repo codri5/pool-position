@@ -1,6 +1,7 @@
 const locationsDiv = document.querySelector("#location-cards")
 const discoverBtn = document.querySelector("#hero-search")
 const locationLink = document.querySelector("#location-link")
+const searchBar = document.querySelector("#search_input")
 // const firsticon = document.querySelector("#firsticon")
 
 const likeIcon =  "fa-solid fa-heart";
@@ -115,8 +116,11 @@ let likeButton = function(event) {
     }
 }
 
+
+
 locations = updateLocations(locations)
 
 // addEventListener("load", )
+// searchBar.addEventListener("keydown", showmap)
 locationLink.addEventListener("click", renderLocations)
 locationsDiv.addEventListener("click", likeButton)
