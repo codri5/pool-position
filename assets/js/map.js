@@ -67,4 +67,3 @@ const rating = [];
 locations.forEach(item => rating.push(item.rating));
 const directions = [];
 locations.forEach(item => directions.push(item.directions));
-console.log(directions)
