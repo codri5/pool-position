@@ -23,7 +23,6 @@ function initMap() {
          map.panTo(place.geometry.location);
          map.setZoom(13);
          mapSection.scrollIntoView()
-         console.log("map??");
       } 
 
     });
