@@ -280,3 +280,16 @@ footer {
   color: grey;
   font-style: italic;
 }
+
+/* -------------- Media queries for smartphone --------------  */
+
+@media only screen and (max-width: 600px) {
+  .hide {
+    display: none;
+  }
+
+  .credits {
+    inline-size: 200px;
+    overflow-wrap: break-word;
+  }
+}

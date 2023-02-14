@@ -1,5 +1,6 @@
 let map, autocomplete;
 let infWindow = false;
+let mapSection = document.getElementById("map-section");
 // added and centered map
 function initMap() {
   const wales = new google.maps.LatLng(52.1580, -3.9076);
@@ -20,7 +21,8 @@ function initMap() {
     let place = autocomplete.getPlace();
       if (place.geometry) {
          map.panTo(place.geometry.location);
-         map.setZoom(13);
+         map.setZoom(12);
+         mapSection.scrollIntoView()
       } 
     });
   
