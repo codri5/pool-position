@@ -49,7 +49,6 @@ a:hover {
 #logo {
   padding: 5px;
   width: 80px;
-  margin-right: 40px;
 }
 
 .nav-masthead .nav-link {
@@ -85,11 +84,12 @@ a:hover {
 .hero-container {
   display:flex;
   width: 100vw;
-  height:70vh;
+  height:80vh;
   justify-content:center;
   align-items:center;
   overflow: hidden;
   background-image: url("../images/waterfall.copy.jpg");
+  background-position: 0% 70%;
   background-size: cover, contain;
 }
 

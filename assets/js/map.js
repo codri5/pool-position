@@ -24,6 +24,7 @@ function initMap() {
          map.setZoom(12);
          mapSection.scrollIntoView()
       } 
+
     });
   
   // create markers and info windows
