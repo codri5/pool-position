@@ -281,6 +281,25 @@ footer {
   font-style: italic;
 }
 
+/* -------------- Home Button --------------  */
+#homeBtn {
+  position: fixed; 
+  bottom: 20px;
+  left: 30px;
+  z-index: 3;
+  border: none;
+  outline: none; 
+  background-color: lightgray; 
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+#homeBtn:hover {
+  background-color: darkgrey;
+}
+
 /* -------------- Media queries for smartphone --------------  */
 
 @media only screen and (max-width: 600px) {
