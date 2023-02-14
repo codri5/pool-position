@@ -21,6 +21,9 @@ let updateLocations = function(locations){
 }
 
 let renderLocations = function() {
+
+    locationsDiv.innerHTML = '';
+
     console.log("inside",locations); 
     locations.forEach(location => {
    
@@ -36,13 +39,6 @@ let renderLocations = function() {
     img.setAttribute("class", "card-img-top")
     img.setAttribute("src", location["images"][0])
 
-    let cardBody = document.createElement("div")
-    cardBody.setAttribute("class", "card-body")
-
-    let placeName = document.createElement("h4")
-    placeName.setAttribute("class", "card-title")
-    placeName.innerText = location["name"]
-
     let icon = document.createElement("i")
     if (location["isFavourite"] === false) {
         console.log("location", location , location["isFavourite"]);
@@ -52,19 +48,25 @@ let renderLocations = function() {
         icon.setAttribute("class", likeIcon)
     }
 
-    let locationText = document.createElement("h5")
+
+    let cardBody = document.createElement("div")
+    cardBody.setAttribute("class", "card-body")
+
+    let placeName = document.createElement("h5")
+    placeName.setAttribute("class", "card-title")
+    placeName.innerText = location["name"]
+
+    let locationText = document.createElement("p")
     locationText.setAttribute("class", "card-title")
     locationText.innerText = location["area"]
 
-    let smallText = document.createElement("p")
-    smallText.setAttribute("class", "card-text")
-    smallText.innerText = "Some quick example text to build on the card and make up the buold of the content"
 
     cardBody.appendChild(placeName)
     cardBody.appendChild(locationText)
-    cardBody.appendChild(icon)
-    cardBody.appendChild(smallText)
 
+
+    
+    imageContainer.appendChild(icon)
     imageContainer.appendChild(img)
 
     card.appendChild(imageContainer)
@@ -80,7 +82,6 @@ let likeButton = function(event) {
     let parent = heart.parentElement
     let grandParent = parent.parentElement
 
-    // console.log(event);
     console.log(heart);
     // console.log(parent);
     console.log(grandParent);
