@@ -1,6 +1,7 @@
 let map, autocomplete;
 let infWindow = false;
 let mapSection = document.getElementById("map-section");
+let homeBtn = document.getElementById("homeBtn");
 // added and centered map
 function initMap() {
   const wales = new google.maps.LatLng(52.1580, -3.9076);
@@ -70,3 +71,9 @@ locations.forEach(item => rating.push(item.rating));
 const directions = [];
 locations.forEach(item => directions.push(item.directions));
 console.log(directions)
+
+// home button function
+function goTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
