@@ -313,11 +313,8 @@ footer {
 #unsplash {
   color: grey;
   font-style: italic;
-<<<<<<< Updated upstream
-=======
 }
 
-/* -------------- Home Button --------------  */
 #home {
   position: fixed; 
   bottom: 20px;
@@ -347,5 +344,5 @@ footer {
     inline-size: 200px;
     overflow-wrap: break-word;
   }
->>>>>>> Stashed changes
+
 }
