@@ -11,11 +11,11 @@ Another way the user can explore different spots is by pressing the 'Swim' link 
 
 ## Screenshots
 
-<img src="assets/images/screenshots/home.png" width="350" height="250" alt="home screen"/>
+<img src="assets/images/screenshots/home.png" width="400" height="250" alt="home screen"/>
 
-<img src="assets/images/screenshots/map.png" width="350" height="250" alt="map"/>
+<img src="assets/images/screenshots/map.png" width="400" height="250" alt="map"/>
 
-<img src="assets/images/screenshots/cards.png" width="350" height="250" alt="swimming spots"/>
+<img src="assets/images/screenshots/cards.png" width="400" height="250" alt="swimming spots"/>
 
 ## Future Development
 
@@ -25,6 +25,6 @@ Another way the user can explore different spots is by pressing the 'Swim' link 
 
 ## Contributors
 
-Andrea Gates
-Codrina Pal
-Alice West
+- Andrea Gates
+- Codrina Pal
+- Alice West
