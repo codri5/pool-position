@@ -70,10 +70,10 @@ const rating = [];
 locations.forEach(item => rating.push(item.rating));
 const directions = [];
 locations.forEach(item => directions.push(item.directions));
-console.log(directions)
 
 // home button function
 function goTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
