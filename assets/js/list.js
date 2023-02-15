@@ -2,6 +2,7 @@ const locationsDiv = document.querySelector("#location-cards")
 const locationLink = document.querySelector("#location-link")
 const searchBar = document.querySelector("#search_input")
 const key = "62d5440eb21080da0f55dfad5e6d254d"
+// const key = "fdfc69f0a3fe9836736635c42b79958b" - second key
 
 
 
