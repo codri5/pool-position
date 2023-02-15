@@ -47,16 +47,21 @@ a:hover {
 /* --------------  Nav Styling --------------  */
 
 #logo {
-  padding: 5px;
-  width: 80px;
+  margin: 20px;
+  width: 60px;
 }
 
 .nav-masthead .nav-link {
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
-  font-weight: 700;
+  font-size: large;
+  font-weight: 600;
   color: #fff;
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
+}
+
+.nav-link {
+  margin-top: 20px;
 }
 
 .nav-masthead .nav-link:hover,
@@ -72,6 +77,9 @@ a:hover {
   text-underline-offset: 10px;
   text-decoration-thickness: 0.1rem;
 }
+
+
+
 
 /* --------------  Hero Image & Container Styling --------------  */
 
@@ -109,6 +117,7 @@ a:hover {
   color: #FF6600;
   border-color: #FF6600;
   padding: 0 50px;
+  padding-top: 3px ;
   margin-left: 10px;
 }
 
@@ -190,7 +199,7 @@ a:hover {
 /* --------------  Location Cards --------------  */
 
 #locations {
-  background-color: #fff;
+  /* background-color: #fff; */
   padding-top:30px;
 
 }
@@ -199,15 +208,10 @@ a:hover {
   width: 20rem;
   border-radius: 10px;
   margin: 1rem;
-  /* box-shadow: 5px 10px 10px darkgray; */
-  border: white 1px solid;
   color: #333;
+  overflow: hidden;
 }
 
-.card:hover {
-  box-shadow: 5px 10px 10px darkgray; 
-
-}
 
 .card-body{
   padding: 10px 20px;
@@ -222,13 +226,27 @@ a:hover {
 
 }
 
-img {
+.location-image {
   background-image: url();
   border-radius: 5px;
   height: inherit;
   width: inherit;
   
 }
+
+.icon-image {
+  float: right;
+}
+
+.footer-icons {
+  background-image: url();
+  border-radius: 5px;
+  height: inherit;
+  width: inherit;
+  
+}
+
+
 
 i {
   color: white;
@@ -239,8 +257,12 @@ i {
 
 }
 
+.textContainer {
+  margin-top: 20px;
+}
+
 .card-title {
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 
@@ -291,4 +313,39 @@ footer {
 #unsplash {
   color: grey;
   font-style: italic;
+<<<<<<< Updated upstream
+=======
+}
+
+/* -------------- Home Button --------------  */
+#home {
+  position: fixed; 
+  bottom: 20px;
+  left: 30px;
+  z-index: 3;
+  border: none;
+  outline: none; 
+  background-color: darkgrey; 
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+#home:hover {
+  background-color: #FF6600;
+}
+
+/* -------------- Media queries for smartphone --------------  */
+
+@media only screen and (max-width: 600px) {
+  .hide {
+    display: none;
+  }
+
+  .credits {
+    inline-size: 200px;
+    overflow-wrap: break-word;
+  }
+>>>>>>> Stashed changes
 }
