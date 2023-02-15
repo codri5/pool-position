@@ -1,5 +1,7 @@
 let map, autocomplete;
 let infWindow = false;
+let mapSection = document.getElementById("map-section");
+let homeBtn = document.getElementById("homeBtn");
 // added and centered map
 function initMap() {
   const wales = new google.maps.LatLng(52.1580, -3.9076);
@@ -20,7 +22,8 @@ function initMap() {
     let place = autocomplete.getPlace();
       if (place.geometry) {
          map.panTo(place.geometry.location);
-         map.setZoom(13);
+         map.setZoom(12);
+         mapSection.scrollIntoView()
       } 
 
     });
@@ -67,3 +70,10 @@ const rating = [];
 locations.forEach(item => rating.push(item.rating));
 const directions = [];
 locations.forEach(item => directions.push(item.directions));
+
+// home button function
+function goTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
