@@ -19,62 +19,38 @@
 
   <body>
     <!-- Home button -->
+    <div class="container-fluid">
     <button onclick="goTop()" id="homeBtn"><i id=home class="fa-solid fa-house"></i></button>
-    <!-- <div class="hero-container d-flex h-80 p-3 mx-auto flex-column"> -->
-      <div class="container-fluid">
-        <header>
-            <!-- <div class="inner d-flex justify-content-center align-items-center">
-            <h3 class="masthead-brand">Pool Position</h3> -->
-            <nav class="nav nav-masthead d-flex justify-content-center">
-                <a class="nav-link active" href="#map-section">Map</a>
-                <img id="logo" src="assets/images/pp_logo.jpeg">
-                <a class="nav-link" href="#locations-section" id="location-link">Swim</a>
-              </nav>
-                <!-- </div> -->
-            </header>
 
-        <main>
-          <section class="hero-container">
-            <div class="search-container">
-              <h4 class="hero-heading">Pool Position</h4>
-              <h1 class="hero-heading">Go wild swimming in Wales.</h1>
-              <div class="input-group">
-                <input id="search_input" type="text" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                <button id="hero-search"type="button" class="btn btn-outline-primary"><h5><a href="#map-section">Go Swimming</a></h5></button>
-              </div>
-            </div>
-          </section> <!-- end of hero -->
+    <header>
+      <nav class="nav d-flex justify-content-center">
+        <a class="nav-link active" href="#map-section">Map</a>
+        <img id="logo" src="assets/images/pp_logo.jpeg">
+        <a class="nav-link" href="#locations-section" id="location-link">Swim</a>
+      </nav>
+    </header>
 
-          <a id ="map-section"></a>
-            <section class="map-section">
-              <div id="map"></div>
-            </section>  <!-- end of map -->
-
-          <a id ="locations-section"></a>
-            <section id="locations">
-              <div id="location-cards" class="row d-flex justify-content-center"></div>
-            </section>  <!-- end of locations -->
-     
-<!-- Text box that floats over slideshow and introduces app when user clicks "About" in navbar -->
-    <div class="modal" tabindex="-1" id="aboutModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Find swimmer-approved spots throughout the natural beauty of Wales</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>As swimmers with a deep love of Wales, we're always looking for local natural swimming spots.
-              With our interactive map, swimmers can search a variety of locations throughout Wales, take a look at the scenery, find out what the weather might offer, and even store their favourite swims for future reference. Let's go swimming.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <main>
+      <section class="hero-container">
+        <div class="search-container">
+          <h1 class="hero-heading">Wild<br> &emsp;swimming<br> &emsp; &emsp;in Wales</h1>
+          <div class="input-group">
+            <input id="search_input" type="text" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+            <button id="hero-search"type="button" class="btn btn-outline-primary"><h5><a href="#map-section">Go Swimming</a></h5></button>
           </div>
         </div>
-      </div>
-    </div>
+      </section> <!-- end of hero -->
+
+      <a id ="map-section"></a>
+        <section class="map-section">
+          <div id="map"></div>
+        </section>  <!-- end of map -->
+
+      <a id ="locations-section"></a>
+        <section id="locations">
+          <div id="location-cards" class="row d-flex justify-content-center"></div>
+        </section>  <!-- end of locations -->
+    </main>
 
 <!-- Footer with credits -->
     <footer class="footer">
@@ -120,7 +96,6 @@
   </script>
   <script src="assets/js/locations.js"></script>
   <script src="assets/js/map.js"></script>
-  <script src="assets/js/weather.js"></script>
   <script src="assets/js/list.js"></script>
 
 </body>
